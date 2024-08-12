@@ -1,0 +1,35 @@
+.loader {
+     width: 100px;
+     height: 100px;
+     display: inline-block;
+     position: relative;
+     background: rgb(9, 85, 46);
+     box-sizing: border-box;
+     animation: flipX 1s linear infinite;
+   }
+   
+   @keyframes flipX {
+     0% {
+       transform: perspective(200px) rotateX(0deg) rotateY(0deg);
+     }
+     50% {
+       transform: perspective(200px) rotateX(-180deg) rotateY(0deg);
+     }
+     100% {
+       transform: perspective(200px) rotateX(-180deg) rotateY(-180deg);
+     }
+   }
+       
+     
+
+   .loading{
+     width: 100dvw;
+     height: 100dvh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   .fit{
+    height: 100dvh !important;
+    overflow: hidden !important;
+   }
